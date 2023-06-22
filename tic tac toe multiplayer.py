@@ -41,7 +41,7 @@ class Sprite(pygame.sprite.Sprite):
 pygame.init()
 
 WIN = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
-pygame.display.set_caption("TIC TAC DOE")
+pygame.display.set_caption("TIC TAC TOE")
 
 group = pygame.sprite.Group()
 
@@ -161,7 +161,7 @@ def draw_winner(text):
 
 
 def draw_grid():
-    draw_text = TEXT_FONT.render("Welome to Tic Tac Doe!", 1, BLACK)
+    draw_text = TEXT_FONT.render("Welome to Tic Tac Toe!", 1, BLACK)
     WIN.blit(draw_text, (20, 20))
 
     pygame.draw.rect(WIN, BLACK, HORI_ONE)
